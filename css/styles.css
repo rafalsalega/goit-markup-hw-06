@@ -638,6 +638,8 @@ border-radius: 4px;
 .modal-form textarea:hover {
   border: 1px solid rgba(33, 150, 243, 1);
   border-radius: 4px;
+  transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .user-comment:focus-visible,
 input:focus-visible {
@@ -661,6 +663,8 @@ input:focus-visible {
 }
 .modal-send-button:hover {
   cursor: pointer;
+  transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal-form label:focus-within svg {
   fill:  rgba(33, 150, 243, 1);
