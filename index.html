@@ -389,6 +389,19 @@
         </li>
       </ul>
     </div>
+    <div class="newsletter">
+      <h4 class="newsletter-txt">ZAPISZ SIĘ DO NEWSLETTERA</h4>
+      <form>
+        <label>
+        <input class="newsletter-input" type="email" name="email" placeholder="E-mail">
+        <button class="newsletter-btn" type="submit"><h4>Zapisz się</h4>
+          <svg class="send-icon">
+            <use href="./images/sprite.svg#icon-form-send"></use>
+          </svg>
+        </button>
+      </label>
+      </form>
+    </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -398,6 +411,63 @@
           <use href="./images/sprite.svg#icon-close-button"></use>
         </svg>
       </button>
+    
+      <form 
+     class="modal-form" 
+     name="leave-data"
+     >
+      <h3 class="modal-txt"> Zostaw swoje dane w formularzu poniżej </h3>
+<label class="user-name">
+  Imię
+  <svg class="icon-user-name input-icon">
+    <use href="./images/sprite.svg#icon-first-name"> 
+    </use>  
+  </svg>
+    <input type="text" name="name" id="user-name" required />
+ </label>
+ <label class="user-tel">
+  Telefon
+  <svg class="icon-modal-phone input-icon">
+    <use href="./images/sprite.svg#icon-phone-modal"> 
+    </use>  
+  </svg>
+    <input type="tel" name="phone" id="user-phone" required />
+ </label>
+ <label class="user-email">
+  Email
+  <svg class="icon-modal-email input-icon">
+    <use href="./images/sprite.svg#icon-mail-modal"> 
+    </use>  
+  </svg>
+    <input type="email" name="email" id="user-email" required />
+ </label>
+ <label>
+  Komentarz
+  <textarea class="user-comment"
+  type="text"
+  name="comment"
+  placeholder="Wprowadź tekst">
+</textarea>
+ </label>
+
+ <div class="modal-checkbox"><!-- -->
+  <input
+    class="checkbox-input" 
+    type="checkbox"
+    name="agreement"
+    value="agreement"
+    required
+  />
+
+  <label for="agreement" class="checkbox-label">
+    Oświadczam, iż akceptuję
+    <a href="#rules">Regulamin</a> i
+    <a href="#privacypolicy">Politykę Prywatności</a>.
+  </label>
+</div>
+<button class="modal-send-button" type="submit">Wyślij</button>
+
+     </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
